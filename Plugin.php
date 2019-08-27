@@ -202,6 +202,7 @@ class TeePay_Plugin implements Typecho_Plugin_Interface{
 		$index = Helper::removeMenu('文章付费');		
 		Helper::removeAction('teepay-post-edit');
 		Helper::removePanel($index, 'TeePay/manage-posts.php');
+	        Helper::removePanel($index, 'TeePay/manage-paylist.php');
         return _t('插件已被禁用');
     }
 
